@@ -37,7 +37,6 @@ def register():
         if user == table[i][0]:
             check = True
 
-    print(password)
     if check == None:
         cursor.execute('INSERT INTO users VALUES(?,?,?,?,?);',
                        (res, user, forename, surname, password))
